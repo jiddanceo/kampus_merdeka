@@ -1,0 +1,139 @@
+body {
+    margin: 20px;
+    padding: 0px;
+  }
+
+.box1-1{ 
+    margin: auto;
+    width: 220px; 
+    height:40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 1em; 
+    background: #520864;
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-weight: normal;
+    margin: 5em auto 45px;
+  }
+
+.form {
+    width: 390px;
+    height: 310px;
+    background: #edeff1;
+    margin: 0px auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+
+  select {
+    display: block;
+    width: 323px;
+    height: 43px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+button {
+    display: block;
+    width: 309px;
+    height: 35px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+  input[type="number"] {
+    display: block;
+    width: 309px;
+    height: 35px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  input[type="number"]:focus {
+    border: 2px solid #1abc9d;
+  }
+  
+  input[type="button"] {
+    text-align: center;
+    background: #2b013f;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 0px;
+    margin: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="button"]:hover {
+    background: #dd30ec;
+  }
+  
+  a {
+    text-align: center;
+    font-family: Arial;
+    color: gray;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 12px;
+  }
+  
+  a:hover {
+    color: #1abc9d;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: gray;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: gray;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: gray;
+  }
+  
+  :-ms-input-placeholder {
+    color: gray;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Order - Produk
+    </title>
+    <link rel="stylesheet" href="./css/style6.css">
+    <script language="javascript" src="./js/Tugas6.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body background="./image/math.jpg">
+    <div class="box1-1">
+        <h1 class="space">KalkulatorKu!</h1>
+    </div>
+    <form id="formulir" class="form" action="">
+        <input id="a1" name="a1" type="number" onfocus="kosong1()" placeholder="Masukkan Angka" />
+        <input id="a2" name="a2" type="number" onfocus="kosong2()" placeholder="Masukkan Angka" />
+        <input name="hasil" type="number" value="0" disabled />
+        <center>
+            <input type="button" value="+" onclick="tambah()" />
+            <input type="button" value="-" onclick="kurang()" />
+            <input type="button" value="x" onclick="kali()" />
+            <input type="button" value="/" onclick="bagi()" />
+            <input type="button" value="^" onclick="pangkat()" />
+        </center>
+        <a href="" onclick="kosongall()">Batal</a>
+    </form>
+</body>
+
+</html>
