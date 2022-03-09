@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Belajar Mengenal Hewan
+    </title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="box1-1">
+        <h1 class="space">Gambar dan Suara Hewan</h1>
+    </div>
+    <form class="form" action="">
+        <div id="kambing" class="hewan"></div>
+        <div id="bebek" class="hewan"></div>
+        <div id="jangkrik" class="hewan"></div>
+        <div id="elang" class="hewan"></div>
+
+        <p>Kambing</p>
+        <p>Bebek</p>
+        <p>Jangkrik</p>
+        <p>Elang</p>
+    </form>
+
+    <div class="box1-1">
+        <h1 class="space">Tentang NF Computer</h1>
+    </div>
+    <form class="page">
+        <div class="content">
+            <div id="cf" class="show">Company Profile</div>
+            <div id="incf" class="showon">
+                NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui kualitas kerja dan integritasnya
+                oleh dunia usaha.
+                <br><br> NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan pelatihan IT (Information Technology). Kami berkomitmen menjadi partner perusahaan Anda dalam mengembangkan kemampuan serta keahlian SDM
+                di bidang IT. Dengan komitmen tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+                <br><br> Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat
+                atas kebutuhan pengembangan kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi terbaru.
+            </div>
+            <br>
+            <div id="vm" class="show">Visi & Misi</div>
+            <div id="invm" class="showon">
+                <p style="text-align: justify;" align="justify">
+                    <strong>Visi</strong>
+                    <br> Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di berbagai wilayah indonesia.</p>
+                <p style="text-align: justify;">
+                    <strong>Misi</strong>
+                    <br> Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk produk
+                    pendidikan dan pelatihan teknologi informasi dan komunikasi prima.</p>
+            </div>
+            <br>
+            <div id="db" class="show">Deskripsi Bisnis</div>
+            <div id="indb" class="showon">
+                NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk. <br /><br /> Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+                <ul>
+                    <li>
+                        Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun Windows.
+                    </li>
+                    <li>
+                        Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.
+                    </li>
+                    <li>
+                        In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan
+                    </li>
+                </ul>
+                Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh NF COMPUTER yaitu :
+
+                <ul>
+                    <li>
+                        Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi antara keduanya.
+                    </li>
+                    <li>
+                        Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang dipertimbangkan sebagai produk dan akan menjadi bagian
+                        dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap tepat oleh NF COMPUTER.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+
+<script type="text/javascript">
+    // ----- Zone Kambing ----------
+    $("document").ready(function() {
+        $("#kambing")
+            .mouseover(function() {
+                $("<audio></audio>").attr({
+                        src: "audio/kambing.mp3",
+                        volume: "0,4",
+                        autoplay: "autoplay"
+                    })
+                    .appendTo("body");
+                $("#kambing").css({
+                        "background-image": "url('image/kambing.png')",
+                    })
+                    .mouseleave(function() {
+                        $("audio").remove();
+                        $("#kambing").css({
+                            background: "rgb(1, 80, 56)",
+                        })
+                    })
+            });
+    });
+
+    // ----- Zone Bebek ----------
+    $("document").ready(function() {
+        $("#bebek")
+            .mouseover(function() {
+                $("<audio></audio>").attr({
+                        src: "audio/bebek.mp3",
+                        volume: "0,4",
+                        autoplay: "autoplay"
+                    })
+                    .appendTo("body");
+                $("#bebek").css({
+                        "background-image": "url('image/bebek.png')",
+                    })
+                    .mouseleave(function() {
+                        $("audio").remove();
+                        $("#bebek").css({
+                            background: "rgb(1, 80, 56)",
+                        });
+                    });
+            });
+    });
+
+    // ----- Zone Jangkrik ----------
+    $("document").ready(function() {
+        $("#jangkrik")
+            .mouseover(function() {
+                $("<audio></audio>").attr({
+                        src: "audio/jangkrik.mp3",
+                        volume: "0,4",
+                        autoplay: "autoplay"
+                    })
+                    .appendTo("body");
+                $("#jangkrik").css({
+                        "background-image": "url('image/jangkrik.png')",
+                    })
+                    .mouseleave(function() {
+                        $("audio").remove();
+                        $("#jangkrik").css({
+                            background: "rgb(1, 80, 56)",
+                        });
+                    });
+            });
+    });
+    // ----- Zone Elang ----------
+    $("document").ready(function() {
+        $("#elang")
+            .mouseover(function() {
+                $("<audio></audio>").attr({
+                        src: "audio/elang.mp3",
+                        volume: "0,4",
+                        autoplay: "autoplay"
+                    })
+                    .appendTo("body");
+                $("#elang").css({
+                        "background-image": "url('image/elang.png')",
+                    })
+                    .mouseleave(function() {
+                        $("audio").remove();
+                        $("#elang").css({
+                            background: "rgb(1, 80, 56)",
+                        });
+                    });
+            });
+    });
+
+    // -- Zone Jquery Slider --
+    $("#cf").click(function() {
+        $("#incf").slideToggle("slow");
+    });
+    $("#vm").click(function() {
+        $("#invm").slideToggle("slow");
+    });
+    $("#db").click(function() {
+        $("#indb").slideToggle("slow");
+    });
+</script>
+
+<style type="text/css">
+    div.hewan {
+        background: rgb(1, 80, 56);
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin: 15px;
+        padding: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        float: left;
+        cursor: pointer;
+    }
+    
+    p {
+        float: left;
+        padding: 1px 55px;
+    }
+    /* Zone css CONTENT */
+    
+    body {
+        margin: 20px;
+        padding: 0px;
+        background-color: rgb(12, 180, 130);
+    }
+    
+    .box1-1 {
+        margin: auto;
+        width: 420px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 1em;
+        background: #ffffff;
+    }
+    
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-style: bold;
+        font-family: Arial;
+        font-weight: normal;
+        margin: 5em auto 45px;
+    }
+    
+    .form {
+        width: 640px;
+        height: 220px;
+        background: #edeff1;
+        margin: 0px auto;
+        padding-top: 20px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+    .page {
+        width: 640px;
+        height: auto;
+        background: #edeff1;
+        margin: 10px auto;
+        padding-top: 20px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+    a:hover {
+        color: #1abc9d;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: gray;
+    }
+    
+     :-moz-placeholder {
+        /* Firefox 18- */
+        color: gray;
+    }
+    
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: gray;
+    }
+    
+     :-ms-input-placeholder {
+        color: gray;
+    }
+    /* --- Zone NF Comp --- */
+    
+    .content {
+        padding: 40px;
+    }
+    
+    h4 {
+        margin-bottom: -10px;
+    }
+    
+    .show {
+        cursor: pointer;
+    }
+    
+    .show,
+    .showon {
+        width: 80%;
+        margin: auto;
+        padding: 10px 20px;
+        text-align: center;
+        background: rgb(2, 53, 44);
+        border: 2px solid rgb(2, 2, 2);
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .showon {
+        text-align: justify;
+        display: none;
+    }
+    
+    .showon:nth-last-child(1) {
+        margin-bottom: 30px;
+    }
+</style>
+
+</html>
