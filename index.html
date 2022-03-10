@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar Boostrap</title>
+    <link href="css/bootstrap-dark.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Baris 1-->
+            <div class="col-md-12">
+                <!-- Awal Slider Coursel-->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Akhir Slider Coursel-->
+            </div>
+        </div>
+
+        <!----- Zone Navigasi ----->
+        <div class="row">
+            <!-- Baris 2-->
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">D-Store</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarColor02">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Price</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Galery</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Project</a>
+                                        <a class="dropdown-item" href="#">Video Design</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!----- END Zone Navigasi ----->
+        <br>
+
+        <div class="row">
+            <!-- Baris 3-->
+            <div class="col-md-3">
+
+                <!---- Zone Content left ---->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Features
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Pembayaran Otomatis</strong><br> Deposit saldo dapat diverifikasi otomatis tanpa harus konfirmasi pembayaran.
+                                <br><br>
+                                <strong>Pembaruan</strong><br> Layanan selalu diperbarui agar lebih ditingkatkan dan memberi Anda pengalaman terbaik.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Services
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Pulsa</strong> <br> Pulsa all operator
+                                <br><br>
+                                <strong>Paket Internet</strong> <br> Kuota Internet all operator
+                                <br><br>
+                                <strong>Pascabayar</strong> <br> Pembayaran pascabayar bulanan
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                About D-Store
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>D-Store Adalah</strong> sebuah platform bisnis yang menyediakan berbagai layanan isi ulang ponsel dan social media marketing yang bergerak terutama di Indonesia. Dengan bergabung bersama kami, Anda dapat menjual
+                                produk isi ulang seperti pulsa, paket data, voucher game, e-money.dsb serta menjadi penyedia jasa social media seperti jasa penambah Followers, Likes, dll.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- END Zone Content Left ---->
+
+            <!---- Zone Content Center ---->
+            <div class="col-md-6">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">D-Store</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                        <br>
+                        <strong>Apa itu D-store?</strong>
+                        <p>D-Store adalah sebuah platform bisnis yang menyediakan berbagai layanan isi ulang ponsel dan social media marketing yang bergerak terutama di Indonesia. Dengan bergabung bersama kami, Anda dapat menjual produk isi ulang seperti
+                            pulsa, paket data, voucher game, e-money.dsb serta menjadi penyedia jasa social media seperti jasa penambah Followers, Likes, dll.</p>
+                        <p>
+                            <strong>Bagaimana Cara Melakukan Deposit/Isi Saldo?</strong><br> Untuk melakukan deposit/isi saldo, Anda hanya perlu masuk terlebih dahulu ke akun Anda dan menuju halaman deposit dengan mengklik menu yang sudah tersedia. Kami
+                            menyediakan deposit melalui bank dan pulsa.
+                        </p>
+                        <p>
+                            <strong> Bagaimana Cara Mendaftar di Dan-Pedia?</strong><br> Silahkan kamu klik form Pendaftaran yang sudah tertera diatas.
+                        </p>
+                        <p>
+                            <strong> Bagaimana Cara Membuat Pesanan? </strong><br> Untuk membuat pesanan sangatlah mudah, Anda hanya perlu masuk terlebih dahulu ke akun Anda dan menuju halaman pemesanan dengan mengklik menu yang sudah tersedia. Selain
+                            itu Anda juga dapat melakukan pemesanan melalui request API.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <br>
+                        <strong>Apa itu D-store?</strong>
+                        <p>D-Store adalah sebuah platform bisnis yang menyediakan berbagai layanan isi ulang ponsel dan social media marketing yang bergerak terutama di Indonesia. Dengan bergabung bersama kami, Anda dapat menjual produk isi ulang seperti
+                            pulsa, paket data, voucher game, e-money.dsb serta menjadi penyedia jasa social media seperti jasa penambah Followers, Likes, dll.</p>
+                        <p>
+                            <br>
+                    </div>
+                    <div class="tab-pane fade" id="dropdown1">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles
+                            etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                    </div>
+                    <div class="tab-pane fade" id="dropdown2">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high
+                            life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                    </div>
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 60rem;">
+                    <div class="card-header">Apakah Pesan di atas membantu?</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Semoga membantu ya!</h4>
+                        <p class="card-text">Silakan nilai kami dengan mimilih tombol dibawah ini. Terima kasih</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="pop()" class="btn btn-primary">Ya!</button>
+                        <button type="button" onclick="pop2()" class="btn btn-danger" data-bs-dismiss="modal">Tidak</button>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                </div>
+            </div>
+            <!---- END Zone Content Center ---->
+
+            <!---- Zone Content Right ---->
+            <div class="col-md-3">
+                <div class="alert alert-dismissible alert-danger">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>Assalamualaikum!</strong> <a href="#" class="alert-link">Selamat</a> Kamu telah mengunjungi web d-store.
+                </div>
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>D-store</strong> adalah <a href="#" class="alert-link">Web yang dirancang oleh jiddan.ir</a>.
+                </div>
+                <div class="alert alert-dismissible alert-info">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>Selamat!</strong> <a href="#" class="alert-link">Berkunjung</a>, Semoga hari ini menjadi hari yang terbaik.
+                </div>
+            </div>
+            <!---- END Zone Content Right ---->
+        </div>
+        <br>
+        <div class="row">
+            <!-- Baris 4-->
+            <div class="col-md-12">
+                <div style="text-align: center;" class="alert alert-dark" role="alert">
+                    Copyright By Jiddan.ir
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/popper.min.js"></script>
+<script src="js/boostrap.min.js"></script>
+<script>
+    function pop() {
+        swal("Terimakasih", "Anda senang kamipun senang :)", "success");
+    }
+
+    function pop2() {
+        swal("Maaf!", "Kami akan memperbaikinya, Menjadi lebih baik lagi", "error");
+    }
+</script>
+
+</html>
